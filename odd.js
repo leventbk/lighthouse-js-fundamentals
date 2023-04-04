@@ -1,8 +1,8 @@
 // this function return always true
 function isOdd(num) {
-	if (num %2 === 0) {
-		return false
-	} else{return true}
+	if (num %2 !== 0) {
+		return true
+	} else { return false}
 }
 
 //alternative solution
