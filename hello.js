@@ -2,8 +2,12 @@
 // 	console.log("Hello, world");
 //   }
   
-const sayHello  = function (name) {
-	console.log("Hello, " + name);
+const returnSayHello  = function (name) {
+	//console.log("Hello, " + name);
+	return "Hello, " + name; 
   }
 
-  sayHello("levent");  sayHello("bahadirhan");  sayHello("karakus");
+  const greeting = returnSayHello('Levent');
+  console.log(greeting);
+ 
+  
