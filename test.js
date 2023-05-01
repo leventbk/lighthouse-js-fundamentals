@@ -1,13 +1,30 @@
-const lastIndexOf = function(array, value) {
-	for (let i = array.length - 1; i >= 0; i--) {
-	  if (array[i] === value) return i;
-	}
-  
-	return -1; 
+const checkAir = function (samples, threshold) {
+  let dirty = 0;
+  for (let i = 0; i < samples.length; i++) {
+      if (samples[i] === "dirty") {
+        dirty++;
+      }
+  } if (threshold < dirty / 10) {
+      return ("polluted");
+
+  } else if (threshold > dirty / 10) {
+      return ("Clean");
   }
-  
-  console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 1), "=?", 3);
-  console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 2), "=?", 4);
-  console.log(lastIndexOf([ 0, 1, 4, 1, 2 ], 3), "=?", -1);
-  console.log(lastIndexOf([ 5, 5, 5 ], 5), "=?", 2);
-  console.log(lastIndexOf([], 3), "=?", -1);
+  return "polluted"
+};
+
+
+console.log(checkAir(
+  ['clean', 'clean', 'dirty', 'clean', 'dirty', 'clean', 'clean', 'dirty', 'clean', 'dirty'],
+  0.3
+));
+
+console.log(checkAir(
+  ['dirty', 'dirty', 'dirty', 'dirty', 'clean'],
+  0.25
+));
+
+console.log(checkAir(
+  ['clean', 'dirty', 'clean', 'dirty', 'clean', 'dirty', 'clean'],
+  0.9
+))
