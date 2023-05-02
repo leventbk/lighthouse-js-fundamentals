@@ -1,7 +1,7 @@
-const isEven = function (num) {
-	return num %2 ===0 ;
+const isEven = function(num) {
+  return num % 2 === 0;
 	
-}
+};
 
 // const callIsEven = function (isEven) {
 // 	if (isEven) {

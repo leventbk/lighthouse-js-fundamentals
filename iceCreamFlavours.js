@@ -5,6 +5,6 @@ console.log(iceCreamFlavours);
 // Your code below here...
 iceCreamFlavours.push("root beer");
 console.log(iceCreamFlavours[5]);
-console.log(iceCreamFlavours[iceCreamFlavours.length -1]);
+console.log(iceCreamFlavours[iceCreamFlavours.length - 1]);
 console.log(iceCreamFlavours.length);
 

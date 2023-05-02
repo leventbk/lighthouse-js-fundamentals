@@ -3,10 +3,10 @@
 // const weapon: ['poison','trophy', 'pool stick','knife'];
 // const solved: true;
 
-var weapon = '';
-var room = '';
-var solved = false;
+let weapon = '';
+let room = '';
+let solved = false;
 if (room === 'dinig room') {
-	weapon === 'knife';
+  weapon === 'knife';
  
 }
